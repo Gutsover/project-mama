@@ -36,6 +36,7 @@ export default () => (
                     className="responsive-img"
                     src="static/images/mener-des-actions/bar.jpeg"
                   />
+                  <span className="img-link">http://www.chodevant.fr</span>
                 </ScrollAnimation>
               </a>
             </Link>
@@ -71,6 +72,7 @@ export default () => (
                     className="responsive-img"
                     src="static/images/mener-des-actions/paint.jpeg"
                   />
+                  <span className="img-link">http://www.colorisk.fr</span>
                 </ScrollAnimation>
               </a>
             </Link>
@@ -111,6 +113,15 @@ export default () => (
     </div>
     <style jsx>{`
       p {
+        text-align: center;
+      }
+
+      .img-link {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: black;
+        display: block;
+        margin-top: -0.5rem;
+        max-width: 300px;
         text-align: center;
       }
 

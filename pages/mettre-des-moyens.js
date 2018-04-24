@@ -8,6 +8,8 @@ import Link from "next/link";
 
 import { brandColors } from "../constantes/colors";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -67,25 +69,29 @@ export default () => (
 
         <div className="col s12 valign">
           <div className="valign-left">
-            <StatCard cardClass="white">
-              <strong>2 846</strong>
-              <span>ADHESIONS POUR</span>
+            <ScrollAnimation animateIn="bounceInLeft" duration="1">
+              <StatCard cardClass="white">
+                <strong>2 846</strong>
+                <span>ADHESIONS POUR</span>
 
-              <strong>15 221</strong>
-              <span>SALARIÉS SUIVIS</span>
+                <strong>15 221</strong>
+                <span>SALARIÉS SUIVIS</span>
 
-              <strong>3 385</strong>
-              <span>RADIATIONS POUR</span>
+                <strong>3 385</strong>
+                <span>RADIATIONS POUR</span>
 
-              <strong>21 515</strong>
-              <span>SALARIÉS SUIVIS</span>
-            </StatCard>
+                <strong>21 515</strong>
+                <span>SALARIÉS SUIVIS</span>
+              </StatCard>
+            </ScrollAnimation>
           </div>
           <div className="valign-right">
-            <img
-              className="responsive-img"
-              src="static/images/mettre-des-moyens/hand.jpeg"
-            />
+            <ScrollAnimation animateIn="bounceInRight" duration="1">
+              <img
+                className="responsive-img"
+                src="static/images/mettre-des-moyens/hand.jpeg"
+              />
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -93,7 +99,7 @@ export default () => (
 
         <H3>Les supports d'information et de communication</H3>
 
-        <div className="col s12">
+        <div className="col s12 m8 offset-m2">
           <StatCard cardClass="colored">
             <strong>138</strong>
             <span>Supports réalisés ou mis à jour</span>
@@ -141,17 +147,19 @@ export default () => (
           <SimpleCard cardClass="colored">
             <div className="col s12 m6">
               <StatCard cardClass="white">
-                <strong>185 451</strong>
-                <span>VISITES</span>
+                <ScrollAnimation animateIn="fadeIn" duration="2">
+                  <strong>185 451</strong>
+                  <span>VISITES</span>
 
-                <strong>381 782</strong>
-                <span>PAGES VUES</span>
+                  <strong>381 782</strong>
+                  <span>PAGES VUES</span>
 
-                <strong>75 464</strong>
-                <span>VISITEURS UNIQUES</span>
+                  <strong>75 464</strong>
+                  <span>VISITEURS UNIQUES</span>
 
-                <strong>69 240</strong>
-                <span>NOUVELLES VISITES</span>
+                  <strong>69 240</strong>
+                  <span>NOUVELLES VISITES</span>
+                </ScrollAnimation>
               </StatCard>
             </div>
 
@@ -180,69 +188,73 @@ export default () => (
           </SimpleCard>
         </div>
 
-        <div className="col s12 m6">
-          <StatCard cardClass="white">
-            <strong>8/10</strong>
-            <span>Note globale du site</span>
-            <p>Obtenue après enquête</p>
-          </StatCard>
-        </div>
-
-        <div className="card-image col s12 m6">
-          <Link href="https://www.polesantetravail.fr/">
-            <a target="_blank">
-              <img
-                className="responsive-img photo-site"
-                src="static/images/mettre-des-moyens/site.png"
-                alt="site pole sante travail"
-                title="Cliquez ici pour visiter notre site"
-              />
-            </a>
-          </Link>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <StatCard cardClass="white">
+              <ScrollAnimation animateIn="flash" duration="2">
+                <strong>8/10</strong>
+                <span>Note globale du site</span>
+                <p>Obtenue après enquête</p>
+              </ScrollAnimation>
+            </StatCard>
+          </div>
+          <div className="valign-right">
+            <Link href="https://www.polesantetravail.fr/">
+              <a target="_blank">
+                <img
+                  className="responsive-img photo-site"
+                  src="static/images/mettre-des-moyens/site.png"
+                  alt="site pole sante travail"
+                  title="Cliquez ici pour visiter notre site"
+                />
+              </a>
+            </Link>
+          </div>
         </div>
 
         <H2 id="immobiliers-investissements">Immobiliers et investissements</H2>
 
-        <div className="col s12 m6">
-          <SimpleCard cardClass="colored">
-            <p>AMENAGEMENTS</p>
-            <ul className="card__list">
-              <li>Somain</li>
-              <li>Leers</li>
-              <li>Roubaix</li>
-              <li>Tourcoing</li>
-              <li>Caestre</li>
-              <li>Villeneuve d'ascq - La Plaine</li>
-              <li>Saint-Omer</li>
-              <li>Sainghin-en-Mélantois</li>
-              <li>Vauban (Siège)</li>
-            </ul>
-          </SimpleCard>
-        </div>
+        <div className="col s12 valign">
+          <div className="valign-left">
+            <SimpleCard cardClass="colored">
+              <p>AMENAGEMENTS</p>
+              <ul className="card__list">
+                <li>Somain</li>
+                <li>Leers</li>
+                <li>Roubaix</li>
+                <li>Tourcoing</li>
+                <li>Caestre</li>
+                <li>Villeneuve d'ascq - La Plaine</li>
+                <li>Saint-Omer</li>
+                <li>Sainghin-en-Mélantois</li>
+                <li>Vauban (Siège)</li>
+              </ul>
+            </SimpleCard>
+          </div>
+          <div className="valign-right">
+            <SimpleCard cardClass="white">
+              <strong>OUVERTURE DES CENTRES</strong>
 
-        <div className="col s12 m6">
-          <SimpleCard cardClass="white">
-            <strong>OUVERTURE DES CENTRES</strong>
+              <p>LOMME HUMANICITE</p>
 
-            <p>LOMME HUMANICITE</p>
+              <span>OUVERTURE EN FEVRIER 2017</span>
 
-            <span>OUVERTURE EN FEVRIER 2017</span>
+              <p>DOUAI DORIGNIES</p>
 
-            <p>DOUAI DORIGNIES</p>
+              <span>OUVERTURE EN DECEMBRE 2017</span>
 
-            <span>OUVERTURE EN DECEMBRE 2017</span>
-
-            <figure>
-              <img
-                className="responsive-img photo-centre-douai"
-                src="static/images/mettre-des-moyens/centre-douai.jpg"
-                alt="photo centre douai"
-              />
-              <figcaption>
-                <strong>Centre de Douai Dorignies</strong>
-              </figcaption>
-            </figure>
-          </SimpleCard>
+              <figure>
+                <img
+                  className="responsive-img photo-centre-douai"
+                  src="static/images/mettre-des-moyens/centre-douai.jpg"
+                  alt="photo centre douai"
+                />
+                <figcaption>
+                  <strong>Centre de Douai Dorignies</strong>
+                </figcaption>
+              </figure>
+            </SimpleCard>
+          </div>
         </div>
 
         <div className="col s12 m6 offset-m7">
