@@ -2,6 +2,8 @@ import classnames from "classnames";
 
 import { brandColors } from "../../constantes/colors";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 const StatCard = ({ cardClass, icone, children, className }) => {
   const classes = classnames("stat-card", "card-panel", className, {
     "card-colored": cardClass === "colored",
@@ -10,7 +12,9 @@ const StatCard = ({ cardClass, icone, children, className }) => {
 
   return (
     <div className={classes}>
-      <i className="large material-icons">{icone}</i>
+      <ScrollAnimation animateIn="fadeInDown">
+        <i className="large material-icons">{icone}</i>
+      </ScrollAnimation>
       {children}
 
       <style jsx global>
