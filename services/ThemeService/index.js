@@ -3,7 +3,7 @@ import firestore from "firebase/firestore";
 
 import config from "../../constantes/firebase-config";
 
-export default class NewsService {
+export default class ThemeService {
   constructor() {
     if (!firebase.apps.length) {
       firebase.initializeApp(config);
@@ -11,19 +11,19 @@ export default class NewsService {
     this.db = firebase.firestore();
   }
 
-  async getNews() {
-    const newsRef = this.db.collection("news");
-    let news = [];
+  async getTheme() {
+    const themeRef = this.db.collection("theme");
+    let theme = [];
 
     try {
-      const newsData = await newsRef.get();
+      const themeRef = await themeRef.get();
 
-      newsData.forEach(doc => {
-        news = doc.data();
-        return news;
+      themeRef.forEach(doc => {
+        theme = doc.data();
+        return theme;
       });
 
-      return news;
+      return theme;
     } catch (err) {
       console.log("Error getting documents", err);
       return;

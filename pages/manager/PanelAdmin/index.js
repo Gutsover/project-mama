@@ -73,6 +73,15 @@ const PanelAdmin = ({ avatar, email, onDisconnect }) => (
         margin-bottom: 1rem;
       }
 
+      a:nth-of-type(odd) {
+        margin-right: 2rem;
+      }
+
+      @media only screen and (max-width: 400px) {
+        a {
+          margin-right: 0 !important;
+        }
+      }
       a {
         background-color: ${brandColors.actual} !important;
         min-width: 200px;
