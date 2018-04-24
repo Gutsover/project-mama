@@ -25,8 +25,6 @@ class EcouterEtAccompagner extends React.Component {
   };
   async componentWillMount() {
     const page = this.props.url.pathname.slice(1);
-    console.log(this.props);
-    console.log(page);
 
     this.setState({
       isLoading: false,
@@ -245,20 +243,19 @@ class EcouterEtAccompagner extends React.Component {
                   margin={{
                     top: 55,
                     right: 115,
-                    bottom: 120,
+                    bottom: 0,
                     left: 111
                   }}
-                  innerRadius={0.55}
+                  innerRadius={0.25}
                   colors="d320c"
                   colorBy="id"
                   borderColor="inherit:darker(0.6)"
-                  enableRadialLabels={false}
                   radialLabelsSkipAngle={0}
                   radialLabelsTextXOffset={8}
                   radialLabelsTextColor="#333333"
                   radialLabelsLinkOffset={3}
-                  radialLabelsLinkDiagonalLength={26}
-                  radialLabelsLinkHorizontalLength={36}
+                  radialLabelsLinkDiagonalLength={6}
+                  radialLabelsLinkHorizontalLength={16}
                   radialLabelsLinkStrokeWidth={1}
                   radialLabelsLinkColor="inherit"
                   slicesLabelsSkipAngle={0}
@@ -465,7 +462,7 @@ class EcouterEtAccompagner extends React.Component {
                     bottom: 0,
                     left: 111
                   }}
-                  innerRadius={0.55}
+                  innerRadius={0.25}
                   colors="d320c"
                   colorBy="id"
                   borderColor="inherit:darker(0.6)"
@@ -474,7 +471,7 @@ class EcouterEtAccompagner extends React.Component {
                   radialLabelsTextColor="#333333"
                   radialLabelsLinkOffset={3}
                   radialLabelsLinkDiagonalLength={26}
-                  radialLabelsLinkHorizontalLength={36}
+                  radialLabelsLinkHorizontalLength={16}
                   radialLabelsLinkStrokeWidth={1}
                   radialLabelsLinkColor="inherit"
                   slicesLabelsSkipAngle={0}
@@ -907,7 +904,7 @@ class EcouterEtAccompagner extends React.Component {
                     bottom: 79,
                     left: 111
                   }}
-                  innerRadius={0.55}
+                  innerRadius={0.25}
                   colors="nivo"
                   colorBy="id"
                   borderColor="inherit:darker(0.6)"
@@ -915,8 +912,8 @@ class EcouterEtAccompagner extends React.Component {
                   radialLabelsTextXOffset={8}
                   radialLabelsTextColor="#333333"
                   radialLabelsLinkOffset={3}
-                  radialLabelsLinkDiagonalLength={26}
-                  radialLabelsLinkHorizontalLength={36}
+                  radialLabelsLinkDiagonalLength={6}
+                  radialLabelsLinkHorizontalLength={6}
                   radialLabelsLinkStrokeWidth={1}
                   radialLabelsLinkColor="inherit"
                   slicesLabelsSkipAngle={0}
