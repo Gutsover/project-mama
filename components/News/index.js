@@ -2,36 +2,72 @@ import Link from "next/link";
 
 import { brandColors } from "../../constantes/colors";
 
-const News = ({ dataList }) => (
-  <ul className="news collapsible">
-    {dataList.titles.map((title, i) => (
-      <li className="news__item" key={title}>
-        <div className="news__title collapsible-header truncate">{title}</div>
+class News extends React.Component {
+  componentDidMount() {
+    const elem = document.querySelector(".carousel");
+    M.Carousel.init(elem);
+  }
 
-        <div className="collapsible-body">
-          <Link href={"https://www.polesantetravail.fr" + dataList.urls[i]}>
-            <a title="Lire la suite..." target="_blank">
-              <p className="news__summary">{dataList.summaries[i]}</p>
+  render() {
+    const newsList = this.props.newsList;
+    return (
+      <div className="carousel">
+        {newsList.images.map((img, i) => (
+          <Link
+            href={"https://www.polesantetravail.fr/" + newsList.urls[i]}
+            key={newsList.titles[i]}
+          >
+            <a className="carousel-item" target="_blank">
+              <div className="card">
+                <div className="card-image">
+                  <img
+                    className="img responsive news__image"
+                    src={"https://www.polesantetravail.fr/" + img}
+                  />
+                  <span className="card-title">{newsList.titles[i]}</span>
+                </div>
+                <div className="card-content">
+                  <p>{newsList.summaries[i]}</p>
+                </div>
+                <div className="card-action">Lire la suite</div>
+              </div>
             </a>
           </Link>
-        </div>
-      </li>
-    ))}
-    <style jsx>{`
-      .news .news__item {
-        background-color: ${brandColors.actual};
-      }
+        ))}
+        <style jsx>{`
+          .carousel {
+            height: 140vh;
+            top: -300px;
+          }
 
-      .news .news__title {
-        font-size: 1rem;
-      }
+          .card {
+            width: 400px;
+          }
 
-      .news .news__summary {
-        font-size: 1rem !important;
-        color: white;
-      }
-    `}</style>
-  </ul>
-);
+          .card-title {
+            color: white !important;
+            background-color: rgba(0, 0, 0, 0.6);
+          }
+
+          .card-content {
+            color: black !important;
+          }
+
+          .card-action {
+            color: ${brandColors.actual} !important;
+            display: flex;
+            justify-content: flex-end;
+          }
+
+          @media only screen and (max-width: 992px) {
+            .card {
+              width: 250px;
+            }
+          }
+        `}</style>
+      </div>
+    );
+  }
+}
 
 export default News;
