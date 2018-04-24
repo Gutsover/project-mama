@@ -14,8 +14,8 @@ import { brandColors } from "../../constantes/colors";
 class Manager extends React.Component {
   state = {
     isConnected: false,
-    email: "",
-    // isConnected: true,
+    email: "team.mamawf3@gmail.com",
+    isConnected: true,
     // email: "sguilbert@polesantetravail.fr",
     error: false
   };
