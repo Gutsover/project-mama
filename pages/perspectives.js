@@ -64,7 +64,9 @@ export default () => (
             </p>
           </div>
 
-          <i className="valign-right large material-icons">account_balance</i>
+          <ScrollAnimation animateIn="fadeInRight">
+            <i className="valign-right large material-icons">account_balance</i>
+          </ScrollAnimation>
         </div>
 
         <div className="row">
@@ -90,9 +92,11 @@ export default () => (
 
         <div className="row">
           <div className="col s12 valign">
-            <i className="valign-left large material-icons">
-              supervisor_account
-            </i>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <i className="valign-left large material-icons">
+                supervisor_account
+              </i>
+            </ScrollAnimation>
             <p className="valign-right">
               La santé au travail est un travail d’équipe et le déploiement de
               notre organisation s’est poursuivi. Plus de 50% des professionnels
@@ -121,7 +125,9 @@ export default () => (
               Lille Jeanne d’Arc a subi de grandes transformations pour
               accueillir les équipes de Lille Masséna.
             </p>
-            <i className="valign-right large material-icons">adjust</i>
+            <ScrollAnimation animateIn="fadeInRight">
+              <i className="valign-right large material-icons">adjust</i>
+            </ScrollAnimation>
           </div>
         </div>
 
@@ -163,7 +169,9 @@ export default () => (
 
         <div className="row">
           <div className="col s12 valign">
-            <i className="valign-left large material-icons">apps</i>
+            <ScrollAnimation animateIn="fadeInLeft">
+              <i className="valign-left large material-icons">apps</i>
+            </ScrollAnimation>
             <p className="valign-right">
               Pour les professionnels de santé au travail, le logiciel métier
               est en cours de refonte. Un cahier des charges a été rédigé afin

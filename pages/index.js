@@ -9,6 +9,8 @@ import { brandColors } from "../constantes/colors";
 
 import Services from "../services";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 class Index extends React.Component {
   state = {
     isLoading: true,
@@ -47,13 +49,16 @@ class Index extends React.Component {
                     au questionnaire
                   </a>
                 </Link>
-                <a
-                  href="/perspectives"
-                  className="intro__discover waves-effect waves-light btn-large"
-                >
-                  <i className="material-icons left">insert_chart</i>commencer
-                  la visite
-                </a>
+
+                <ScrollAnimation animateIn="flash">
+                  <a
+                    href="/perspectives"
+                    className="intro__discover waves-effect waves-light btn-large"
+                  >
+                    <i className="material-icons left">insert_chart</i>commencer
+                    la visite
+                  </a>
+                </ScrollAnimation>
               </div>
             </section>
           )}

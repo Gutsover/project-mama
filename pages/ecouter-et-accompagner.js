@@ -716,7 +716,61 @@ class EcouterEtAccompagner extends React.Component {
                 Apporter des réponses adaptées face aux problématiques de
                 consommation de drogues et d'alcool sur le lieu de travail
               </H2>
-              <div className="col s12 m4">
+
+              <div className="col s12 valign">
+                <div className="valign-left">
+                  <SimpleCard cardClass="colored">
+                    <p>
+                      Les consommations et addictions ont un impact réel sur
+                      l’état de santé du salarié.
+                    </p>
+                    <p>
+                      Les conduites individuelles sous l’emprise de drogues ou
+                      d’alcool représentent un risque à évaluer et à prendre en
+                      compte, en particulier sur les postes de sécurité. Cette
+                      thématique doit être perçue comme les autres risques et
+                      traitée comme telle. Mais aujourd’hui encore, c’est un
+                      sujet tabou en entreprise.
+                    </p>
+                    <p>
+                      Depuis la loi du 20 juillet 2011, la prévention des
+                      addictions et consommations est une mission de service
+                      pour la santé au travail.
+                    </p>
+                    <p>
+                      C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
+                      Ressources en ADDictologie (PRADD) qui propose :
+                    </p>
+                  </SimpleCard>
+                </div>
+                <div className="valign-right">
+                  <SimpleCard cardClass="colored">
+                    <p>
+                      Les consommations et addictions ont un impact réel sur
+                      l’état de santé du salarié.
+                    </p>
+                    <p>
+                      Les conduites individuelles sous l’emprise de drogues ou
+                      d’alcool représentent un risque à évaluer et à prendre en
+                      compte, en particulier sur les postes de sécurité. Cette
+                      thématique doit être perçue comme les autres risques et
+                      traitée comme telle. Mais aujourd’hui encore, c’est un
+                      sujet tabou en entreprise.
+                    </p>
+                    <p>
+                      Depuis la loi du 20 juillet 2011, la prévention des
+                      addictions et consommations est une mission de service
+                      pour la santé au travail.
+                    </p>
+                    <p>
+                      C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
+                      Ressources en ADDictologie (PRADD) qui propose :
+                    </p>
+                  </SimpleCard>
+                </div>
+              </div>
+
+              <div className="col s12 m12">
                 <SimpleCard cardClass="colored">
                   <p>
                     Les consommations et addictions ont un impact réel sur
@@ -741,7 +795,8 @@ class EcouterEtAccompagner extends React.Component {
                   </p>
                 </SimpleCard>
               </div>
-              <div className="col s12 m4">
+
+              <div className="col s12 m12">
                 <SimpleCard cardClass="white">
                   <p>Pour les salariés des :</p>
                   <ul className="card__list">
@@ -770,82 +825,88 @@ class EcouterEtAccompagner extends React.Component {
                   </ul>
                 </SimpleCard>
               </div>
-              <div className="col s12 m4">
-                <SimpleCard cardClass="colored">
-                  <p>
-                    Le PRADD est un outil d’aide pour les équipes santé travail.
-                    C’est le médecin du travail qui doit initier avec son équipe
-                    la question de la prévention autour de ce thème. Plusieurs
-                    outils ont été conçus par le PRADD en lien avec le service
-                    communication comme l’organisation d’un pot d’entreprise,
-                    quelques conseils, fiche constat, powerpoint de
-                    sensibilisation. Un module d’e-learning a également été
-                    développé.
-                  </p>
-                </SimpleCard>
+
+              <div className="col s12 valign">
+                <div className="valign-left">
+                  <SimpleCard cardClass="colored">
+                    <p>
+                      Le PRADD est un outil d’aide pour les équipes santé
+                      travail. C’est le médecin du travail qui doit initier avec
+                      son équipe la question de la prévention autour de ce
+                      thème. Plusieurs outils ont été conçus par le PRADD en
+                      lien avec le service communication comme l’organisation
+                      d’un pot d’entreprise, quelques conseils, fiche constat,
+                      powerpoint de sensibilisation. Un module d’e-learning a
+                      également été développé.
+                    </p>
+                  </SimpleCard>
+                </div>
+
+                <div className="valign-right">
+                  <StatCard icone="local_bar" cardClass="white">
+                    <strong>80</strong>
+                    <span>Consultations</span>
+                    <strong>173</strong>
+                    <span>Entretiens réalisés</span>
+                    <strong>46</strong>
+                    <span>Salariés suivis</span>
+                    <strong>36</strong>
+                    <span>Entreprises accompagnées</span>
+                  </StatCard>
+                </div>
               </div>
-              <div className="col s12">
-                <StatCard icone="local_bar" cardClass="white">
-                  <strong>80</strong>
-                  <span>Consultations</span>
-                  <strong>173</strong>
-                  <span>Entretiens réalisés</span>
-                  <strong>46</strong>
-                  <span>Salariés suivis</span>
-                  <strong>36</strong>
-                  <span>Entreprises accompagnées</span>
-                </StatCard>
-              </div>
+
               <H2 id="maintien-emploi">
                 Accompagner les entreprises et les salariés dans la recherche de
                 solutions pour le maintien dans l'emploi
               </H2>
 
               <div className="col s12">
-                <p>Section en construction</p>
+                <Build />
               </div>
 
               <H2 id="formation-des-salaries">
                 La formation des salariés sur la santé au travail
               </H2>
 
-              <div className="col s12 m6">
-                <SimpleCard cardClass="colored">
-                  <p>
-                    Organisme de formation créé en 1997 par les services de
-                    santé au travail de la métropole lilloise, PST formation a
-                    pour objectif de répondre aux attentes des entreprises en
-                    matière de formation de leurs personnels et d’actualiser son
-                    offre en continu pour coller aux réalités du terrain et aux
-                    besoins émergents.
-                  </p>
+              <div className="col s12 valign">
+                <div className="valign-left">
+                  <SimpleCard cardClass="colored">
+                    <p>
+                      Organisme de formation créé en 1997 par les services de
+                      santé au travail de la métropole lilloise, PST formation a
+                      pour objectif de répondre aux attentes des entreprises en
+                      matière de formation de leurs personnels et d’actualiser
+                      son offre en continu pour coller aux réalités du terrain
+                      et aux besoins émergents.
+                    </p>
 
-                  <p>
-                    La force de PST formation réside dans sa connaissance du
-                    monde de l’entreprise et dans ses liens privilégiés avec la
-                    santé au travail, des atouts indéniables pour proposer une
-                    offre de formation adaptée et professionnelle.
-                  </p>
-                </SimpleCard>
-              </div>
-
-              <div className="col s12 m6">
-                <SimpleCard cardClass="colored">
-                  <strong>
-                    UNE OFFRE DE SERVICE COMPLÈTE EN SANTÉ ET SÉCURITÉ AU
-                    TRAVAIL
-                  </strong>
-                  <p>
-                    L’offre de service de PST Formation couvre les différents
-                    champs de la santé et de la sécurité au travail : prévention
-                    mal de dos et des TMS, de l’incendie, des addictions, des
-                    risques à domicile, formations des Sauveteurs Secouristes du
-                    Travail, des formateurs SST, des membres CHSCT ... à travers
-                    8 thématiques et pas loin de 30 formations, PST Formation
-                    accompagne les entreprises dans une politique globale de
-                    prévention des risques.
-                  </p>
-                </SimpleCard>
+                    <p>
+                      La force de PST formation réside dans sa connaissance du
+                      monde de l’entreprise et dans ses liens privilégiés avec
+                      la santé au travail, des atouts indéniables pour proposer
+                      une offre de formation adaptée et professionnelle.
+                    </p>
+                  </SimpleCard>
+                </div>
+                <div className="valign-right">
+                  <SimpleCard cardClass="colored">
+                    <strong>
+                      UNE OFFRE DE SERVICE COMPLÈTE EN SANTÉ ET SÉCURITÉ AU
+                      TRAVAIL
+                    </strong>
+                    <p>
+                      L’offre de service de PST Formation couvre les différents
+                      champs de la santé et de la sécurité au travail :
+                      prévention mal de dos et des TMS, de l’incendie, des
+                      addictions, des risques à domicile, formations des
+                      Sauveteurs Secouristes du Travail, des formateurs SST, des
+                      membres CHSCT ... à travers 8 thématiques et pas loin de
+                      30 formations, PST Formation accompagne les entreprises
+                      dans une politique globale de prévention des risques.
+                    </p>
+                  </SimpleCard>
+                </div>
               </div>
 
               <div className="col s12">
@@ -879,7 +940,7 @@ class EcouterEtAccompagner extends React.Component {
                 </SimpleCard>
               </div>
 
-              <div className="col s12">
+              <div className="col s12 m8 offset-m2">
                 <StatCard cardClass="colored">
                   <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
                     <strong>3 564</strong>

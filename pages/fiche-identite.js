@@ -8,6 +8,8 @@ import ListCard from "../components/ListCard";
 
 import { brandColors } from "../constantes/colors";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 export default () => (
   <Layout>
     <div className="container">
@@ -128,13 +130,19 @@ export default () => (
           <div className="valign-right">
             <StatCard cardClass="white">
               <strong>12</strong> <span>secteurs géographiques</span>
-              <i className="large material-icons">home</i>
-              <strong>184</strong>{" "}
+              <ScrollAnimation animateIn="fadeInDown">
+                <i className="large material-icons">home</i>
+              </ScrollAnimation>
+              <strong>184</strong>
               <span>centres de santé au travail au sein des entreprises</span>
-              <i className="large material-icons">people</i>
+              <ScrollAnimation animateIn="fadeInDown">
+                <i className="large material-icons">people</i>
+              </ScrollAnimation>
               <strong>24</strong> <span>centres de santé au travail</span>
-              <i className="large material-icons">airport_shuttle</i>
-              <strong>5</strong>{" "}
+              <ScrollAnimation animateIn="fadeInDown">
+                <i className="large material-icons">airport_shuttle</i>
+              </ScrollAnimation>
+              <strong>5</strong>
               <span>centres de santé au travail mobiles</span>
             </StatCard>
           </div>
