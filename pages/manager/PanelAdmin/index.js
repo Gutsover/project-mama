@@ -8,7 +8,12 @@ const PanelAdmin = ({ email, onDisconnect }) => (
       <ul>
         <li>
           <Link href="">
-            <a className="waves-effect waves-light btn">Contact</a>
+            <a
+              className="waves-effect waves-light btn"
+              href="mailto:team.mamawf3@gmail.com"
+            >
+              Contact
+            </a>
           </Link>
         </li>
         <li>

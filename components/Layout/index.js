@@ -45,6 +45,7 @@ const Layout = ({ children }) => (
     <Footer />
 
     <script src="static/vendors/materialize.min.js" />
+    <script src="https://squaresend.com/squaresend.js" />
     <style jsx>{``}</style>
   </div>
 );
