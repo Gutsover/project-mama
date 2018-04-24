@@ -14,6 +14,8 @@ import Build from "../components/Build";
 
 import Services from "../services";
 
+import { brandColors } from "../constantes/colors";
+
 import ScrollAnimation from "react-animate-on-scroll";
 
 class EcouterEtAccompagner extends React.Component {
@@ -934,6 +936,16 @@ class EcouterEtAccompagner extends React.Component {
                   ]}
                 />
               </div>
+
+              <div className="col s12 m6 offset-m7">
+                <a
+                  href="/mener-des-actions"
+                  className="intro__discover waves-effect waves-light btn-large"
+                >
+                  <i className="material-icons left">insert_chart</i>Continuer
+                  la visite
+                </a>
+              </div>
             </div>
           )}
         </div>
@@ -973,6 +985,10 @@ class EcouterEtAccompagner extends React.Component {
           }
           .build {
             height: 20vh !important;
+          }
+
+          .intro__discover {
+            background-color: ${brandColors.green};
           }
         `}</style>
       </Layout>
