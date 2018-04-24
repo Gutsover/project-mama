@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { brandColors } from "../../../constantes/colors";
 
-const PanelAdmin = ({ email, onDisconnect }) => (
+const PanelAdmin = ({ avatar, email, onDisconnect }) => (
   <div className="col s12 m8 offset-m2 panel-admin">
     <div className="card-panel animated fadeIn">
       <ul>
@@ -43,7 +43,7 @@ const PanelAdmin = ({ email, onDisconnect }) => (
         </li>
       </ul>
       <div className="chip close">
-        {/* <img src="images/yuna.jpg" alt="Contact Person" /> */}
+        <img src={avatar} alt="Contact Person" />
         {email}
         <i onClick={onDisconnect} className="close material-icons">
           close

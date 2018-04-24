@@ -10,13 +10,12 @@ import Loader from "../../components/Loader";
 import config from "../../constantes/firebase-config";
 import { brandColors } from "../../constantes/colors";
 
-// TODO: proper session management
+// TODO: proper session management &  secure
 class Manager extends React.Component {
   state = {
-    isConnected: false,
-    email: "team.mamawf3@gmail.com",
+    avatar: "static/images/avatars/sguilbert.jpg",
+    email: "sguilbert@polesantetravail.fr",
     isConnected: true,
-    // email: "sguilbert@polesantetravail.fr",
     error: false
   };
 
@@ -71,6 +70,7 @@ class Manager extends React.Component {
               <PanelAdmin
                 email={this.state.email}
                 onDisconnect={this.onDisconnect}
+                avatar={this.state.avatar}
               />
             ) : (
               <ConnectionForm
