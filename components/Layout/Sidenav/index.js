@@ -78,6 +78,7 @@ class Sidenav extends React.Component {
 
           .sidenav {
             background: ${brandColors.actual};
+            transition: background-color 1s ease-out;
           }
 
           ::-webkit-scrollbar {

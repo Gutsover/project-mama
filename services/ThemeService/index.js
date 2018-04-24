@@ -11,15 +11,31 @@ export default class ThemeService {
     this.db = firebase.firestore();
   }
 
+  async setTheme(actual) {
+    this.db
+      .collection("theme")
+      .doc("colors")
+      .set({
+        actual: actual
+      })
+      .then(function() {
+        console.log("Document successfully written!");
+      })
+      .catch(function(error) {
+        console.error("Error writing document: ", error);
+      });
+  }
+
   async getTheme() {
     const themeRef = this.db.collection("theme");
     let theme = [];
 
     try {
-      const themeRef = await themeRef.get();
+      const themeSnapshot = await themeRef.get();
 
-      themeRef.forEach(doc => {
+      themeSnapshot.forEach(doc => {
         theme = doc.data();
+
         return theme;
       });
 

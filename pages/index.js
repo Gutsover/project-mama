@@ -18,10 +18,16 @@ class Index extends React.Component {
   };
 
   async componentWillMount() {
+    const color = await Services.theme.getTheme();
+
     this.setState({
       newsList: await Services.news.getNews(),
+      color: color,
       isLoading: false
     });
+
+    brandColors.actual = color.actual;
+    this.forceUpdate();
   }
 
   render() {
@@ -114,7 +120,7 @@ class Index extends React.Component {
           }
 
           .intro__discover {
-            background: ${brandColors.actual};
+            background-color: ${brandColors.actual} !important;
             right: 20%;
           }
 
