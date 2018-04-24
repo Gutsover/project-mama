@@ -36,7 +36,7 @@ class News extends React.Component {
         ))}
         <style jsx>{`
           .carousel {
-            height: 140vh;
+            height: 150vh;
             top: -300px;
           }
 
