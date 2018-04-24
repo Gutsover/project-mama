@@ -42,7 +42,7 @@ class Manager extends React.Component {
           error: false
         });
 
-        M.toast({ html: "Bonjour !", classes: "rounded" });
+        M.toast({ html: "Bonjour !" });
       })
       .catch(error => {
         // message erreur

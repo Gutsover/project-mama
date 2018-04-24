@@ -12,23 +12,33 @@ const PanelAdmin = ({ email, onDisconnect }) => (
               className="waves-effect waves-light btn"
               href="mailto:team.mamawf3@gmail.com"
             >
+              <i className="material-icons">email</i>
               Contact
             </a>
           </Link>
         </li>
         <li>
           <Link href="">
-            <a className="waves-effect waves-light btn">Google Analytics</a>
+            <a className="waves-effect waves-light btn">
+              <i className="material-icons">trending_up</i>
+              Google Analytics
+            </a>
           </Link>
         </li>
         <li>
           <Link href="">
-            <a className="waves-effect waves-light btn">Résultats du sondage</a>
+            <a className="waves-effect waves-light btn">
+              <i className="material-icons">insert_chart</i>
+              Sondage
+            </a>
           </Link>
         </li>
         <li>
           <Link href="">
-            <a className="waves-effect waves-light btn">Thème</a>
+            <a className="waves-effect waves-light btn">
+              <i className="material-icons">mode_edit</i>
+              Données
+            </a>
           </Link>
         </li>
       </ul>
@@ -66,6 +76,8 @@ const PanelAdmin = ({ email, onDisconnect }) => (
       a {
         background-color: ${brandColors.actual} !important;
         min-width: 200px;
+        position: relative;
+        display: flex;
       }
 
       a:hover,
@@ -78,6 +90,10 @@ const PanelAdmin = ({ email, onDisconnect }) => (
         position: absolute;
         left: 1rem;
         bottom: 1rem;
+      }
+
+      i {
+        margin-right: auto;
       }
     `}</style>
   </div>
