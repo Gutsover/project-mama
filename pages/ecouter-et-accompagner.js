@@ -245,13 +245,14 @@ class EcouterEtAccompagner extends React.Component {
                   margin={{
                     top: 55,
                     right: 115,
-                    bottom: 0,
+                    bottom: 120,
                     left: 111
                   }}
                   innerRadius={0.55}
                   colors="d320c"
                   colorBy="id"
                   borderColor="inherit:darker(0.6)"
+                  enableRadialLabels={false}
                   radialLabelsSkipAngle={0}
                   radialLabelsTextXOffset={8}
                   radialLabelsTextColor="#333333"
