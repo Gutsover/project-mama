@@ -13,21 +13,22 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 class Index extends React.Component {
   state = {
+    // color: {},
     isLoading: true,
     newsList: []
   };
 
   async componentWillMount() {
-    const color = await Services.theme.getTheme();
+    // const color = await Services.theme.getTheme();
 
     this.setState({
       newsList: await Services.news.getNews(),
-      color: color,
+      // color: color,
       isLoading: false
     });
 
-    brandColors.actual = color.actual;
-    this.forceUpdate();
+    // brandColors.actual = color.actual;
+    // this.forceUpdate();
   }
 
   render() {
