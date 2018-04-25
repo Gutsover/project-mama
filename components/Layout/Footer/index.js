@@ -86,7 +86,7 @@ const Footer = props => (
         <li>
           <a
             className="waves-effect btn-flat"
-            href="static/images/pdf/rapport-annuel-2017.pdf"
+            href="https://drive.google.com/file/d/1qO_m9HRdqoyikar5sV7tfWzB4mP6X5ig/view?usp=sharing"
             target="_blank"
           >
             <i className="material-icons left">cloud_download</i>
