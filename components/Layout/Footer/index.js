@@ -60,6 +60,7 @@ const Footer = props => (
           <a
             className="waves-effect btn-flat"
             href="https://www.polesantetravail.fr/contact/#contact-form"
+            target="_blank"
           >
             <i className="material-icons left">message</i>
             Contact
@@ -69,6 +70,7 @@ const Footer = props => (
           <a
             className="waves-effect btn-flat"
             href="https://www.polesantetravail.fr/contact/#centre"
+            target="_blank"
           >
             <i className="material-icons left">people</i>
             Votre agence
@@ -78,6 +80,7 @@ const Footer = props => (
           <a
             className="waves-effect btn-flat"
             href="https://twitter.com/PST_Nord"
+            target="_blank"
           >
             <i className="material-icons left">cloud</i>
             Twitter
