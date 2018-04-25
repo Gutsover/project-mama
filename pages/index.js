@@ -57,14 +57,12 @@ class Index extends React.Component {
                       au questionnaire
                     </a>
                   </Link>
-                  <ScrollAnimation animateIn="flash">
-                    <Link href="/perspectives">
-                      <a className="intro__discover waves-effect waves-light btn-large">
-                        <i className="material-icons left">insert_chart</i>commencer
-                        la visite
-                      </a>
-                    </Link>
-                  </ScrollAnimation>
+                  <Link href="/perspectives">
+                    <a className="intro__discover waves-effect waves-light btn-large">
+                      <i className="material-icons left">insert_chart</i>commencer
+                      la visite
+                    </a>
+                  </Link>
                 </div>
               </section>
 
