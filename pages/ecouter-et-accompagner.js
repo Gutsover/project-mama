@@ -715,59 +715,6 @@ class EcouterEtAccompagner extends React.Component {
                 consommation de drogues et d'alcool sur le lieu de travail
               </H2>
 
-              <div className="col s12 valign">
-                <div className="valign-left">
-                  <SimpleCard cardClass="colored">
-                    <p>
-                      Les consommations et addictions ont un impact réel sur
-                      l’état de santé du salarié.
-                    </p>
-                    <p>
-                      Les conduites individuelles sous l’emprise de drogues ou
-                      d’alcool représentent un risque à évaluer et à prendre en
-                      compte, en particulier sur les postes de sécurité. Cette
-                      thématique doit être perçue comme les autres risques et
-                      traitée comme telle. Mais aujourd’hui encore, c’est un
-                      sujet tabou en entreprise.
-                    </p>
-                    <p>
-                      Depuis la loi du 20 juillet 2011, la prévention des
-                      addictions et consommations est une mission de service
-                      pour la santé au travail.
-                    </p>
-                    <p>
-                      C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
-                      Ressources en ADDictologie (PRADD) qui propose :
-                    </p>
-                  </SimpleCard>
-                </div>
-                <div className="valign-right">
-                  <SimpleCard cardClass="colored">
-                    <p>
-                      Les consommations et addictions ont un impact réel sur
-                      l’état de santé du salarié.
-                    </p>
-                    <p>
-                      Les conduites individuelles sous l’emprise de drogues ou
-                      d’alcool représentent un risque à évaluer et à prendre en
-                      compte, en particulier sur les postes de sécurité. Cette
-                      thématique doit être perçue comme les autres risques et
-                      traitée comme telle. Mais aujourd’hui encore, c’est un
-                      sujet tabou en entreprise.
-                    </p>
-                    <p>
-                      Depuis la loi du 20 juillet 2011, la prévention des
-                      addictions et consommations est une mission de service
-                      pour la santé au travail.
-                    </p>
-                    <p>
-                      C’est pourquoi, PÔLE SANTÉ TRAVAIL a initié le Pôle
-                      Ressources en ADDictologie (PRADD) qui propose :
-                    </p>
-                  </SimpleCard>
-                </div>
-              </div>
-
               <div className="col s12 m12">
                 <SimpleCard cardClass="colored">
                   <p>
