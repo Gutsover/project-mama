@@ -477,10 +477,9 @@ class VeillerSante extends React.Component {
                   </StatCard>
                 </div>
               </div>
-
               <div className="col s12 m6 offset-m7">
                 <a
-                  href="/ecouter-et-accompagner"
+                  href="/ecouter-et-accompagner#aide-evaluation-risques"
                   className="intro__discover waves-effect waves-light btn-large"
                 >
                   <i className="material-icons left">insert_chart</i>Continuer
