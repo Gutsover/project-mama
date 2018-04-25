@@ -111,7 +111,6 @@ export default () => (
             className="responsive-img photo-support1"
             src="static/images/mettre-des-moyens/screen1.png"
             alt="support1"
-            title="Cliquez ici pour visiter notre site"
           />
         </div>
         <div className="col s12 m3">
@@ -119,7 +118,6 @@ export default () => (
             className="responsive-img photo-support2"
             src="static/images/mettre-des-moyens/screen2.png"
             alt="support2"
-            title="Cliquez ici pour visiter notre site"
           />
         </div>
 
@@ -128,7 +126,6 @@ export default () => (
             className="responsive-img photo-support3"
             src="static/images/mettre-des-moyens/screen3.png"
             alt="support3"
-            title="Cliquez ici pour visiter notre site"
           />
         </div>
 
@@ -137,7 +134,6 @@ export default () => (
             className="responsive-img photo-support4"
             src="static/images/mettre-des-moyens/screen4.png"
             alt="support4"
-            title="Cliquez ici pour visiter notre site"
           />
         </div>
 
